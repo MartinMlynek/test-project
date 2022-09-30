@@ -5,11 +5,11 @@ import { Counter } from "./counter";
 import { Link } from "react-router-dom";
 import { Header } from "./header";
 
-export const Homepage: FC = () => {
-  const title = "Vítame Ťa v našej testovacej aplikácií";
-  const subTitle =
-    "Tvojou úlohou bude refactoring zložky homepage a second-page. Hlavný cieľ bude maximálna optimalizácia výkonu kódu. Urob to tak, aby sa veci rendrovali iba vtedy, keď je to nevyhnutné a aby bol kód dobre štrukturovaný a dobre čitateľný. Ak máš chuť, môžes sa samozrejme pozrieť aj na vizuálnu stránku aplikácie. Prajeme Ti veľa dobrých nápadov. Ukáž čo je v tebe!";
+const title = "Vítame Ťa v našej testovacej aplikácií";
+const subTitle =
+  "Tvojou úlohou bude refactoring zložky homepage a second-page. Hlavný cieľ bude maximálna optimalizácia výkonu kódu. Urob to tak, aby sa veci rendrovali iba vtedy, keď je to nevyhnutné a aby bol kód dobre štrukturovaný a dobre čitateľný. Ak máš chuť, môžes sa samozrejme pozrieť aj na vizuálnu stránku aplikácie. Prajeme Ti veľa dobrých nápadov. Ukáž čo je v tebe!";
 
+export const Homepage: FC = () => {
   const [apiFetchDone, setApiFetchDone] = useState(false);
   const [clicks, setClicks] = useState(0);
 
