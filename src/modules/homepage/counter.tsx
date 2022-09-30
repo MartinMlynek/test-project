@@ -4,7 +4,7 @@ interface Props {
   label: string;
 }
 
-export const Counter: FC<Props> = memo(({ label }) => {
+const CounterBase: FC<Props> = ({ label }) => {
   const [clicks, setClicks] = useState(0);
   const handleClick = useCallback(() => {
     setClicks((prevValue) => prevValue + 1);
@@ -16,4 +16,6 @@ export const Counter: FC<Props> = memo(({ label }) => {
       <button onClick={handleClick}>{label}</button>
     </div>
   );
-});
+};
+
+export const Counter = memo(CounterBase);

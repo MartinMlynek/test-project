@@ -15,8 +15,6 @@ export const Homepage: FC = () => {
 
   const dispatchApiFetch = useCallback(() => {
     const timer = setTimeout(() => {
-      console.log("TED");
-
       setApiFetchDone(true);
     }, 1000);
 
